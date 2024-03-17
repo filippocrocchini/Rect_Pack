@@ -58,5 +58,5 @@ rect_packer_remove(*packer, rect);
 Finally, if you want to fully reset the packer:
 
 ```jai
-    rect_packer_reset(*packer);
+rect_packer_reset(*packer);
 ```
