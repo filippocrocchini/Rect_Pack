@@ -1,0 +1,5 @@
+.build/
+*.dSYM
+/modules
+examples/example.*
+!examples/example.jai
