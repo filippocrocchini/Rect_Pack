@@ -19,7 +19,8 @@ Other possible values for split strategy are GUILLOTINE, GUILLOTINE_SLAB_SIZE, S
 The supported heuristics are BEST_SHORT_SIDE_FIT, BEST_AREA_FIT, BOTTOM_LEFT or CUSTOM.
 
 To supply a custom heuristic you can pass two additional parameters to rect_packer_init(): custom_heuristic and user_data.
-The heuristic is intended to score a _node_ as a possible candidate to contain a rectangle of size width*height.
+
+The heuristic is intended to score a node as a possible candidate to contain a rectangle of size width*height, lower is better.
 
 ```jai
 my_heuristic :: (user_data: *void, node: *Node, width: int, height: int) -> int
